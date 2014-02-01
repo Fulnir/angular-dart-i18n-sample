@@ -9,6 +9,7 @@ SampleConfig  config ;
 class  SampleConfig {
   String title = 'Sample';
   Map i18n = new Map();
+  // TODO Using a code based map for the default strings ?
   String currentLocale = "en";
 
   static  create() {
