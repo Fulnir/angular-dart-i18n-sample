@@ -740,3 +740,101 @@ warning web/view/about.html:33:1: End tag (div) seen too early. Expected other e
 ^^^^^^
 build.dart finished [3800 ms]
 
+---
+build.dart --machine --changed=web/config.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning web/index.html:42:9: definition for Polymer element with tag name "ng-view" not found.
+        <ng-view></ng-view>
+        ^^^^^^^^^
+warning web/view/about.html:31:3: End tag (div) seen too early. Expected other end tag.
+  </div>
+  ^^^^^^
+warning web/view/about.html:33:1: End tag (div) seen too early. Expected other end tag.
+</div>
+^^^^^^
+build.dart finished [4600 ms]
+
+---
+build.dart --machine --changed=LICENSE --changed=README.md
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning web/index.html:42:9: definition for Polymer element with tag name "ng-view" not found.
+        <ng-view></ng-view>
+        ^^^^^^^^^
+warning web/view/about.html:31:3: End tag (div) seen too early. Expected other end tag.
+  </div>
+  ^^^^^^
+warning web/view/about.html:33:1: End tag (div) seen too early. Expected other end tag.
+</div>
+^^^^^^
+build.dart finished [2828 ms]
+
+---
+build.dart --machine --changed=web/main.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning web/index.html:42:9: definition for Polymer element with tag name "ng-view" not found.
+        <ng-view></ng-view>
+        ^^^^^^^^^
+warning web/view/about.html:31:3: End tag (div) seen too early. Expected other end tag.
+  </div>
+  ^^^^^^
+warning web/view/about.html:33:1: End tag (div) seen too early. Expected other end tag.
+</div>
+^^^^^^
+build.dart finished [4840 ms]
+
+---
+build.dart --machine --changed=web/main.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning web/index.html:42:9: definition for Polymer element with tag name "ng-view" not found.
+        <ng-view></ng-view>
+        ^^^^^^^^^
+warning web/view/about.html:31:3: End tag (div) seen too early. Expected other end tag.
+  </div>
+  ^^^^^^
+warning web/view/about.html:33:1: End tag (div) seen too early. Expected other end tag.
+</div>
+^^^^^^
+build.dart finished [3867 ms]
+
+---
+build.dart --machine --changed=web/main.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning web/index.html:42:9: definition for Polymer element with tag name "ng-view" not found.
+        <ng-view></ng-view>
+        ^^^^^^^^^
+warning web/view/about.html:31:3: End tag (div) seen too early. Expected other end tag.
+  </div>
+  ^^^^^^
+warning web/view/about.html:33:1: End tag (div) seen too early. Expected other end tag.
+</div>
+^^^^^^
+build.dart finished [2678 ms]
+
+---
+build.dart --machine --changed=web/view/about.html
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning web/index.html:42:9: definition for Polymer element with tag name "ng-view" not found.
+        <ng-view></ng-view>
+        ^^^^^^^^^
+warning web/view/about.html:31:3: End tag (div) seen too early. Expected other end tag.
+  </div>
+  ^^^^^^
+warning web/view/about.html:33:1: End tag (div) seen too early. Expected other end tag.
+</div>
+^^^^^^
+build.dart finished [2860 ms]
+
+---
+build.dart --machine --changed=web/view/about.html
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning web/index.html:42:9: definition for Polymer element with tag name "ng-view" not found.
+        <ng-view></ng-view>
+        ^^^^^^^^^
+warning web/view/about.html:29:3: End tag (div) seen too early. Expected other end tag.
+  </div>
+  ^^^^^^
+warning web/view/about.html:31:1: End tag (div) seen too early. Expected other end tag.
+</div>
+^^^^^^
+build.dart finished [3346 ms]
+

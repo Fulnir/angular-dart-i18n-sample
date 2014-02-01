@@ -10,6 +10,10 @@ class  SampleConfig {
   String title = 'Sample';
   Map i18n = new Map();
   String currentLocale = "en";
+
+  static  create() {
+    config = new SampleConfig();
+  }
   static Future  initialize() {
     var completer = new Completer();
     SampleConfig newConfig = new SampleConfig();

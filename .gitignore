@@ -12,3 +12,5 @@
 /web/packages
 /web/routing/packages
 /web/view/packages
+
+/.settings/org.eclipse.core.resources.prefs
