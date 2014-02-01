@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app>
+<head ng-controller="head-cntl">
+<meta charset="utf-8">
+<meta name="author" content="Edwin Bühler">
+<meta name="keywords" content="AngularDart, i18n">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AngularDart i18n</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" href="css/angular_standard.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/sample.css">
+
+</head>
+<body class="ng-cloak" main-controller >
+  <header>
+    <nav class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#"><img src="images/Icon.png" id="navbar-logo"></a>
+          <ul class="nav navbar-nav">
+            <li><a href="#"><i class="fa fa-home"></i> {{"home" | translate }}</a></li>
+            <li><a href="#/about">{{"about" | translate }}</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+        	<li class="dropdown">
+              <a  class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i></a>
+              <ul class="dropdown-menu">
+                <li><a   ng-click="cntl.setLanguage('en')">{{"English" | translate }}</a></li>
+                <li><a   ng-click="cntl.setLanguage('de')">{{"German" | translate }}</a></li>
+              </ul>
+            </li>
+      	   </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<!--  -->
+  <div class="container">
+    <div class="row">
+        <ng-view></ng-view>
+    </div>
+  </div>
+
+  <script type="application/dart" src="main.dart"></script>
+  <script type="text/javascript" src="packages/browser/dart.js"></script>
+</body>
+</html>

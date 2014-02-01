@@ -1,0 +1,25 @@
+{
+  "_comment": "i18n English",
+  "version": "0.0.1",
+  "modified": "2014-01-31",
+  "language": "English",
+  "locale": "en",
+  "translations" : {
+    "home": "Start",
+    "imprint": "Imprint",
+    "about": "About",
+    "Search": "Search",
+    "languages": {
+      "german": "German",
+      "english": "English"
+    },
+    "messages" : [
+      {
+        "titel": "Imprint",
+        "message": "German",
+        "description": "English"
+      }
+    ]
+  }
+}
+

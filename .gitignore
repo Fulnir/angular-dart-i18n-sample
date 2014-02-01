@@ -1,0 +1,14 @@
+/packages/
+
+/web/asset/packages
+
+/web/font-awesome/css/packages
+/web/font-awesome/fonts/packages
+/web/font-awesome/less/packages
+/web/font-awesome/packages
+/web/font-awesome/scss/packages
+/web/i18n/packages
+/web/images/packages
+/web/packages
+/web/routing/packages
+/web/view/packages

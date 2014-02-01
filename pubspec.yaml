@@ -1,0 +1,23 @@
+name: sample_app
+version: 0.0.1
+author: Edwin Bühler <fulnir@gmail.com>
+description: An AngularDart i18n sample app.
+homepage: https://github.com/Fulnir/angular-dart-i18n-sample
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+documentation: http://github.com/Fulnir/angular-dart-i18n-sample
+dependencies:
+  angular: any
+  bootjack: any
+  browser: any
+  intl: any
+  js: any
+  logging: any
+  polymer: any
+dev_dependencies:
+  dartmocks: any
+  unittest: any
+transformers:
+- polymer:
+    entry_points:
+    - web/index.html

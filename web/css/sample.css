@@ -1,0 +1,11 @@
+
+
+body { padding-top: 70px; }
+
+#navbar-logo {
+  /*position: absolute;*/
+  float: left;
+  width: 40px;
+  margin: 5px;
+  padding: 0px;
+}

@@ -1,0 +1,43 @@
+[ng-cloak], 
+.ng-hide, 
+.ng-show {
+  display: none !important;
+}
+li.done {
+  color: gray;
+  text-decoration: line-through;
+}
+input[type="text"] {
+  height: 30px;
+  width: 300px;
+  margin-bottom: 10px
+}
+.border {
+  width: 360px;
+  margin: 20px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.right {
+  float: right;
+}
+form button {
+  width: 80px;
+}
+ul.well {
+  background: white;
+}
+p {
+  margin: 0 0 6px;
+  padding-top: 4px;
+}
+.loading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.spacer {
+  margin-top: 40px;
+}

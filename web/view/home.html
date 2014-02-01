@@ -1,0 +1,33 @@
+<!--
+  Copyright (C) 2014 Edwin Bühler. All Rights Reserved.
+  @author Edwin Bühler
+-->
+
+<div class="container">
+  <div sample-controller>
+    <div id="message">{{cntl.message}}</div>
+    <div class="row">
+      <div class="col-md-6">
+
+        <div>
+          <header>
+            <br>
+            <div ng-if="cntl.languageElement != ''">
+              <i class="fa fa-info"></i> {{cntl.languageElement}}
+            </div>
+
+            <p>{{"Search" | translate }}</p>
+            <h2 translate="Search"></h2>
+            <div translate="Sample Text" ></div>
+
+
+          </header>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+      </div>
+
+    </div>
+  </div>
+</div>
