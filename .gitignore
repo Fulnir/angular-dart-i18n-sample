@@ -14,3 +14,5 @@
 /web/view/packages
 
 /.settings/org.eclipse.core.resources.prefs
+
+/.buildlog
