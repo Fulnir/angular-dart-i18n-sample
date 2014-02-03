@@ -10,7 +10,6 @@
     <!--  <link rel="stylesheet" href="css/bootstrap.min.css" media="screen"> -->
     <link rel="stylesheet" href="packages/bootjack/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/angular_standard.css"> <!-- for ng-cloak -->
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/sample.css">
   </head>
 
@@ -21,12 +20,12 @@
           <div class="container">
             <a class="brand" href="#"><img src="images/Icon.png" id="navbar-logo"></a>
             <ul class="nav navbar-nav">
-              <li><a href="#"><i class="fa fa-home"></i> {{"home" | translate }}</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-home"></span> {{"home" | translate }}</a></li>
               <li><a href="#/about">{{"about" | translate }}</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
           	<li class="dropdown">
-                <a  class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i></a>
+                <a  class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-globe"></span></a>
                 <ul class="dropdown-menu">
                   <li><a   ng-click="cntl.setLanguage('en')">{{"English" | translate }}</a></li>
                   <li><a   ng-click="cntl.setLanguage('de')">{{"German" | translate }}</a></li>
