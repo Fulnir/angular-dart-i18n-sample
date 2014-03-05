@@ -18,7 +18,7 @@ import 'package:logging/logging.dart';
 
 part '../lib/head_cntl.dart';
 part '../lib/main_cntl.dart';
-part  'config.dart';
+part 'config.dart';
 part 'routing/app_router.dart';
 part 'view/home_cntl.dart';
 part 'view/about_cntl.dart';
@@ -26,19 +26,17 @@ part 'view/about_cntl.dart';
 final Logger logger = new Logger('SampleApp');
 
 
-
-
 // i18n
-@NgFilter(name:'translate')
+@NgFilter(name: 'translate')
 class SampleTranslatorFilter {
-  call(localizableStringToFilter) {
-     return config.translate(localizableStringToFilter);
+  call(localizableStringToFilter, [group]) {
+    return config.translate(localizableStringToFilter, group: group);
   }
 }
-@NgDirective(
-  selector: '[translate]',
-  map: const { 'translate' : '<=>translate' }
-)
+@NgDirective(selector: '[translate]', map: const {
+  'translate': '<=>translate'
+})
+
 class SampleTranslatorDirective {
   String translate;
   Element element;
@@ -48,8 +46,6 @@ class SampleTranslatorDirective {
       element.text = config.translate(element.attributes["translate"]);
     });
   }
-
-
 }
 
 class SampleApp extends Module {
@@ -60,14 +56,16 @@ class SampleApp extends Module {
     type(SampleTranslatorFilter);
     type(SampleTranslatorDirective);
     type(RouteInitializer, implementedBy: SampleRouteInitializer);
-    factory(NgRoutingUsePushState,
-        (_) => new NgRoutingUsePushState.value(false));
+    factory(NgRoutingUsePushState, (_) => new NgRoutingUsePushState.value(false)
+        );
   }
 }
 
 main() {
   Logger.root.level = Level.FINEST;
-  Logger.root.onRecord.listen((LogRecord r) { print(r.message); });
+  Logger.root.onRecord.listen((LogRecord r) {
+    print(r.message);
+  });
   SampleConfig.initialize().then((value) {
     config = value;
     // Bootjack

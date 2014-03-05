@@ -5,13 +5,13 @@
   "language": "German",
   "locale": "de",
   "translations" : {
-    "home": "Start",
+    "home": "Heim",
     "imprint": "Impressum",
     "about": "Über",
     "Search": "Suche",
     "languages": {
-      "german": "Deutsch",
-      "english": "Englisch"
+      "German": "Deutsch",
+      "English": "Englisch"
     },
     "messages" : [
       {
