@@ -9,6 +9,9 @@ There are a filter and a directive to translate your terms.
 ```html
  <p>{{"Search" | translate }}</p>
  <h2 translate="Search"></h2>
+ 
+ Translate grouped terms with NGFilter.
+ <p>{{"German" | translate: "languages" }}</p>
 ```
 
 The localized strings are stored in json files.
@@ -21,8 +24,8 @@ The localized strings are stored in json files.
     "about": "About",
     "Search": "Search",
     "languages": {
-      "german": "German",
-      "english": "English"
+      "German": "German",
+      "English": "English"
     }
   }
 }
